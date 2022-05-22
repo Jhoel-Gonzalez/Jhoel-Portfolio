@@ -2,223 +2,257 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=], initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Libre+Franklin:ital,wght@1,100&family=Ubuntu:wght@300;400&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="assets/img/person-circle-outline.svg" type="image/x-icon">
-    <title>Jhoel's Portfólio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+  integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Portfólio</title>
 </head>
 
-<body>
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div>
-            <p class="logo-nvbar">Port<span class="txt-logo-nb">fólio</span></p>
-        </div>
-        <nav class="nav">
-            <ul class="nav-bar">
-                <li class="nav-item activo"><a class="ancora act_item" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="ancora" href="#sobre">Sobre Mim</a></li>
-                <li class="nav-item"><a class="ancora" href="#formacao">Formação</a></li>
-                <li class="nav-item"><a class="ancora" href="#atPro">Atuação Profissional</a></li>
-                <li class="nav-item"><a class="ancora" href="#port">Portfólio</a></li>
-                <li class="nav-item"><a class="ancora" href="#cntt">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="menu-btn">
-            <ion-icon name="menu-outline"></ion-icon>
-        </div>
-    </header>
+<body data-spy="scroll" data-target=".navbar" data-offset="55">
+
+  <!-- cabeçalho -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bg-color fixed-top container-fliud fonte-especial navbar-bg-color">
+      <a class="navbar-brand logo-nome-color" href="index.html">Port<span class="logo-nome">fólio</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end color" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link links-color text-center" href="#pg-principal">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links-color text-center" href="#sobre-mim">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links-color text-center" href="#formacao">Formação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links-color text-center" href="#atua-prof">Atuação Profissional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links-color text-center" href="#portfolio">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links-color text-center" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    
+  <!-- Conteudo pricipal -->
+  <main>
 
     <!-- Página-Principal -->
-    <section class="sessaoPrin">
-        <div>
-            <p class="txt1">Olá, meu nome é</p>
-            <p class="txt2">Jhoel Gonzalez</p>
-            <p class="txt3">Eu sou <span>Desenvolvedor Front-End</span></p>
-
-            <a href="mailto:jhoel834@gmail.com">Contatar-me</a>
-        </div>
+    <section id="pg-principal" class="pb-5 pag-principal fonte-especial">
+      <div class="container-fluid">
+          <p class="txt1 pl-5">Olá, meu nome é</p>
+          <p class="txt2 pl-5">Jhoel Gonzalez</p>
+          <p class="txt3 pl-5 pb-3">Eu sou <span class="destaque">Desenvolvedor Front-End</span></p>
+          <a class="contatar-me text-decoration-none ml-5" data-toggle="modal" data-target="#modal">Contatar-me</a>
+      </div>
     </section>
 
-    <!-- Sessão-Sobre-Mim -->
-    <section class="tipo_sessao_1">
-        <h2 id="sobre" class="titulo">Sobre Mim</h2>
-        <div class="sobre_conteudo">
-            <img class="foto_perfil" src="assets/img/jhoel.jpeg" alt="Minha Foto">
-            <div class="sobre_paragrafos">
-                <p class="titulo_perfil">Sou Jhoel e sou <strong class="destaque">Desenvolverdor Front-end</strong></p>
-                <p>
-                    Estou no processo de aprendizado de tecnologias para desenvolvimento Front-End.
-                    Sou apaixonado pelo mundo da tecnologia. Procuro me tornar um desenvolvedor de sucesso.
-                    Fiquem a conhecer um pouco do meu trajecto.
-                </p>
-            </div>
+    <!-- Sobre Min -->
+    <section id="sobre-mim" class="pt-5 pb-5 fonte-especial">
+      <h2 class="text-center pt-4">Sobre Mim</h2>
+      <div class="container">
+        <div class="row justify-content-center pt-5">
+          <img class="foto-jhoel-gonzalez" src="assets/img/jhoel.jpeg" alt="Foto de Jhoel Gonzalez">
+          <div class="paragrafos-sobre-mim">
+            <p class="text-center pt-2">Sou Jhoel e sou <span class="destaque">Desenvolverdor Front-end</span></p>
+            <p class="text-center lh-paragrafo-sobre-mim">
+              Estou no processo de aprendizado de tecnologias para desenvolvimento Front-End.
+              Sou apaixonado pelo mundo da tecnologia. Procuro me tornar um desenvolvedor de sucesso.
+              Fiquem a conhecer um pouco do meu trajecto.
+            </p>
+          </div>
         </div>
-
+      </div>
     </section>
 
-    <!-- Sessão-Formação -->
-    <section class="tipo_sessao_2">
-        <h2 id="formacao" class="titulo">Formação</h2>
-        <div>
-            <span class="span">2010-2015</span>
-            <span class="span">L.N.B Pedro José Salazar (Venezuela)</span>
-            <span class="span">Bacharel em ciencias</span>
-        </div>
-        <div>
-            <span class="span">2020-2020</span>
-            <span class="span">Toti Diversidade</span>
-            <span class="span">Curso - Front-end - adquirir competencias em HTML5, CSS3 e Javascipt</span>
-        </div>
+    <!-- Formação -->
+    <section id="formacao" class="pt-5 pb-5 fonte-especial background-sessoes">
+      <h2 class="text-center pt-4">Formação</h2>
+      <div class="text-center pt-3">
+        <p>2010-2015</p>
+        <p>L.N.B Pedro José Salazar (Venezuela)</p>
+        <p>Bacharel em ciencias</p>
+      </div>
+      <div class="text-center">
+        <p>2020-2020</p>
+        <p>Toti Diversidade</p>
+        <p>Curso - Front-end - adquirir competencias em HTML5, CSS3 e Javascipt</p>
+      </div>
     </section>
 
-    <!-- Atuação-Profissional -->
-    <section class="tipo_sessao_1">
-        <h2 id="atPro" class="titulo">Atuação Profissional</h2>
-        <div>
-            <span class="span">2020 - até agora</span>
-            <span class="span">Operador de Máquinas - Seara Alimentos.LTDA</span>
-            <span class="span">
-                Empresa da rama de frigorificos, destinada ao abatimento de aves, para o consumo nacional e
-                internacional.
-            </span>
-        </div>
+    <!-- Atuação profissional -->
+    <section id="atua-prof" class="pt-5 pb-5 fonte-especial">
+      <h2 class="text-center pt-4">Atuação Profissional</h2>
+      <div class="text-center pt-3">
+        <p>2020 - até agora</p>
+        <p>Operador de Máquinas - Seara Alimentos.LTDA</p>
+        <p>
+          Empresa da rama de frigorificos, destinada ao abatimento de aves, para o consumo nacional e
+          internacional.
+        </p>
+      </div>
     </section>
 
     <!-- Portfólio -->
-    <section class="tipo_sessao_2">
-        <h2 id="port" class="titulo">Portfólio</h2>
+    <section id="portfolio" class="container-fluid pt-5 pb-5 fonte-especial background-sessoes">
+      <h2 class="text-center pt-4 pb-4">Portfólio</h2>
+      <div class="row justify-content-center">
 
-        <div class="port_conteudo">
-            <article>
-                <h1 class="titulos_proj">MarketPlace</h1>
-                <img class="imgs_proj" src="assets/img/Joe's Store.png" alt=""><br>
-                <p class="descrip_proj">
-                    Nesse projeto foi desenvolvido um MarketPlace, para o curso de Front-End da
-                    <a href="https://totidiversidade.com.br/">Toti-diversidade.</a>
-                </p>
+        <article class="card largura-card p-0 m-5 col-12 col-md-4">
+          <img src="assets/img/shopping-cart.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Shopping Cart</h5>
+            <a href="shopping-cart.html" class="btn botao-ver-mais">Ver mais</a>
+          </div>
+        </article>
 
-                <div class="links">
-                    <a href="https://joes-store.glitch.me/" target="_blank" class="links_proj links_proj_centro">Ver projeto</a>
-                    <a href="https://github.com/Jhoel834/projeto_final" target="_blank" class="links_proj">Ver Repositorio</a>
-                </div>
-                
-            </article>
+        <article class="card largura-card p-0 m-5 col-12 col-md-4">
+          <img src="assets/img/verificador de idade.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Verificador de idade</h5>
+            <a href="verificador-de-idade.html" class="btn botao-ver-mais">Ver mais</a>
+          </div>
+        </article>
 
-            <article>
-                <h1 class="titulos_proj">loerem Ipsilum</h1>
-                <img class="imgs_proj" src="assets/img/img-teste.jpg" alt=""><br>
-                <p class="descrip_proj">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod consequuntur 
-                    eaque porro deserunt rerum tempora. Quo suscipit explicabo
-                    impedit vel deserunt autem quam delectus minus, labore voluptatibus veniam, 
-                    soluta voluptatem?
-                </p>
+        <article class="card largura-card p-0 m-5 col-12 col-md-4">
+          <img src="assets/img/Tabuada-card.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tabuada</h5>
+            <a href="tabuada.html" class="btn botao-ver-mais">Ver mais</a>
+          </div>
+        </article>
 
-                <div class="links">
-                    <a href="https://joes-store.glitch.me/" target="_blank" class="links_proj links_proj_centro">Ver projeto</a>
-                    <a href="https://github.com/Jhoel834/projeto_final" target="_blank" class="links_proj">Ver Repositorio</a>
-                </div>
-            </article>
-
-            <article>
-                <h1 class="titulos_proj">Lorem Ipsilum</h1>
-                <img class="imgs_proj" src="assets/img/img-teste.jpg" alt=""><br>
-                <p class="descrip_proj">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod consequuntur 
-                    eaque porro deserunt rerum tempora. Quo suscipit explicabo
-                    impedit vel deserunt autem quam delectus minus, labore voluptatibus veniam, 
-                    soluta voluptatem?
-                </p>
-
-                <div class="links">
-                    <a href="https://joes-store.glitch.me/" target="_blank" class="links_proj links_proj_centro">Ver projeto</a>
-                    <a href="https://github.com/Jhoel834/projeto_final" target="_blank" class="links_proj">Ver Repositorio</a>
-                </div>
-            </article>
-        </div>
-
-        <div class="tec_usadas">
-            <h3>Tecnologías utilizadas nesses projetos</h3>
-
-            <a href=""><img class="img_tec_usadas" src="assets/img/html-5.png" alt=""></a>
-            <a href=""><img class="img_tec_usadas" src="assets/img/css-3.png" alt="" ></a>
-            <a href=""><img class="img_tec_js" src="assets/img/js.png" alt=""></a>
-        </div>
+      </div>
     </section>
 
     <!-- Contato -->
-    <section class="tipo_sessao_1">
-        <h2 id="cntt" class="titulo">Contatos</h2>
-        <div class="img-cntto">
-            <div class="div-img-contatos">
-                <p>
-                    <a href="mailto:jhoel834@gmail.com" target="_blank">
-                        <img src="assets/img/gmail.png">
-                    </a>
-                    <span>GMAIL</span>
-                </p>
-                <p>
-                    <a href="tel:+5567996431964">
-                        <img src="assets/img/whatsapp.png">
-                    </a>
-                    <span>WHATSAPP</span>
-                </p>
-                <p>
-                    <a href="https://github.com/Jhoel834" target="_blank">
-                        <img src="assets/img/github.png">
-                    </a>
-                    <span>GITHUB</span>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/in/jhoel-marcial-gonzalez-azocar-101175180/" target="_blank">
-                        <img src="assets/img/linkedin.png">
-                    </a>
-                    <span>LINKEDIN</span>
-                </p>
-            </div>
-            <div class="contato">
-                <form class="form" action="" method="POST">
-                    <label class="label" for="nome">Nome</label>
-                    <input class="input" type="text" id="nome" name="nome" placeholder="Jhoel Gonzalez">
-                    <label class="label" for="email">E-mail</label>
-                    <input class="input" type="email" id="email" name="email" placeholder="Exemplo@email.com">
-                    <label class="label" for="menssagem">Menssagem</label>
-                    <textarea class="input" name="menssagem" id="menssagem"
-                        placeholder="Digite sua menssagem aqui"></textarea>
-                    <input class="botao_enviar" type="submit" value="Enviar">
-                </form>
-            </div>
+    <section id="contato" class="container-fluid pt-5 pb-5 fonte-especial">
+
+      <h2 class="text-center pt-4 pb-5">Contatos</h2>
+      <div class="row justify-content-center">
+        <div>
+          <a href="mailto:jhoel834@gmail.com" target="_blank">
+          <img class="imagens-contato" src="assets/img/gmail.png"></a>
+          <p class="text-center pt-2">GMAIL</p>
         </div>
+
+        <div>
+          <a href="tel:+5567996431964">
+          <img class="imagens-contato" src="assets/img/whatsapp.png"></a> 
+          <p class="text-center pt-2">TELEFONE</p>
+        </div>
+        
+        <div>
+          <a href="https://github.com/Jhoel834" target="_blank">
+          <img class="imagens-contato" src="assets/img/github.png"></a>
+          <p class="text-center pt-2">GITHUB</p>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/jhoel-marcial-gonzalez-azocar-101175180/" target="_blank">
+          <img class="imagens-contato" src="assets/img/linkedin.png"></a>
+          <p class="text-center pt-2">LINKEDIN</p>
+        </div>
+      </div>
+
+      <h3 class="text-center pt-5 pb-5">Formulario de contato</h3>
+      
+      <div class="d-flex justify-content-center">
+        <form class="largura-formulario">
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" class="form-control" id="nome" placeholder="Jhoel Gonzalez">
+          </div>
+          <div class="form-group">
+            <label for="email">Endereço de e-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Nome@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="textarea">Escreva sua mensagem</label>
+            <textarea class="form-control" id="textarea" placeholder="Insira aqui sua mensagem" rows="6"></textarea>
+          </div>
+          <button type="button" class="btn buttons-bg-color">Enviar</button>
+        </form>
+      </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="rodape">
-        <a href="mailto:jhoel834@gmail.com" target="_blank">
-            <ion-icon name="mail-outline"></ion-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/jhoel-marcial-gonzalez-azocar-101175180/" target="_blank">
-            <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-        <a href="https://github.com/Jhoel834" target="_blank">
-            <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="tel:+5567996431964">
-            <ion-icon name="logo-whatsapp"></ion-icon>
-        </a>
+  </main>
 
-    </footer>
+  <!-- Rodapé -->
+  <footer class="p-3 navbar-bg-color">
+    <div class="text-center">
+      <a class="p-4" href="mailto:jhoel834@gmail.com" target="_blank">
+        <ion-icon name="mail-outline"></ion-icon></a>
+      <a class="p-4" href="https://www.linkedin.com/in/jhoel-marcial-gonzalez-azocar-101175180/" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon></a>
+      <a class="p-4" href="https://github.com/Jhoel834" target="_blank">
+        <ion-icon name="logo-github"></ion-icon></a>
+      <a class="p-4" href="tel:+5567996431964">
+        <ion-icon name="logo-whatsapp"></ion-icon></a>
+    </div>
+  </footer>
 
-    <script src="assets/js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+        <main class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nome completo</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Endereço de e-mail</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@exemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Escreva sua mensagem</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Insira aqui sua mensagem" rows="3"></textarea>
+            </div>
+          </form>
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn modal-button">Enviar</button>
+        </footer>
+      </dialog>
+    </div>
+  </div>
 
+  <!-- Ionicons scripts -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Bootstrap Scripts -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+  crossorigin="anonymous"></script>
 </body>
 
 </html>

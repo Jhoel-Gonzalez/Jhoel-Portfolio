@@ -1,0 +1,50 @@
+.fonte-especial {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-bg-color {
+    padding: 13px;
+    background-color: #00804B;
+}
+
+.links-color {
+    color:white!important;
+}
+
+.links-color:hover {
+    color:black!important;
+}
+
+.logo-nome {
+    color:black;
+}
+
+.logo-nome-color {
+    color: white !important;
+}
+
+.shopping-cart-imagem {
+    border: 3px solid #00804B;
+}
+
+.imagens-tecnologias {
+    max-width: 120px;
+    max-height: 120px;
+    margin: 0 25px;
+}
+
+.width-height-iframes {
+    max-width: 560px;
+    max-height: 215px;
+}
+
+.botao-ver-mais {
+    background-color: #00804B;
+    color: white;
+}
+
+ion-icon {
+    width: 30px;
+    height: 30px;
+    color: black;
+}

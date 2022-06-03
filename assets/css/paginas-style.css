@@ -8,15 +8,15 @@
 }
 
 .links-color {
-    color:white!important;
+    color: white !important;
 }
 
 .links-color:hover {
-    color:black!important;
+    color: black !important;
 }
 
 .logo-nome {
-    color:black;
+    color: black;
 }
 
 .logo-nome-color {
@@ -41,6 +41,10 @@
 .botao-ver-mais {
     background-color: #00804B;
     color: white;
+}
+
+.html-pag {
+    line-height: 30px;
 }
 
 ion-icon {

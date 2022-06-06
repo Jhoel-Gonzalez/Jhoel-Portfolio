@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .pag-principal {
     height: 100vh;
     display: flex;

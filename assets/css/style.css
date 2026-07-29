@@ -6,7 +6,7 @@ html {
     height: 100vh;
     display: flex;
     align-items: flex-end;
-    background: url(/assets/img/imagem-principal.png);
+    background: url(../img/imagem-principal.png);
 }
 
 

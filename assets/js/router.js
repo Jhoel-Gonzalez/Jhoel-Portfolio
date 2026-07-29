@@ -1,6 +1,6 @@
 $(function() {
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
-    $("#tecnologias").load("tecnologias.html");
-    $("#empresas").load("empresas.html");
+    $("#header").load("./html/header.html");
+    $("#footer").load("./html/footer.html");
+    $("#tecnologias").load("./html/tecnologias.html");
+    $("#empresas").load("./html/empresas.html");
 });
